@@ -1,0 +1,26 @@
+<div class="whole-form">
+<div class="inline-1">
+<div class="field-1">
+<p>[text* fname placeholder "First Name*"]</p>
+</div>
+<div class="field-2">
+<p>[text* lname placeholder "Last Name*"]</p>
+</div>
+</div>
+<div class="inline-2">
+<div class="field-3">
+<p>[email* email placeholder "Your Email Address*"] </p>
+</div>
+<div class="field-4">
+<p>[tel* phone placeholder "Your Phone Number*"]</p>
+</div>
+</div>
+<div class="field-5">
+<p>[textarea* description placeholder "How can we help?*"]</p>
+</div>
+<p>[dynamichidden signup_url "CF7_URL"]</p>
+
+-- NO NEED TO ADD THIS LINE AS THE HOOK WILL BE TAKING CARE OF THIS FIELD<p>[dynamichidden useripnr id:useridnr readonly "CF7_GET key='_remote_ip'"]</p>
+
+<p>[submit "Send" html_class="wpcf7-form-control wpcf7-submit"]</p>
+</div>
